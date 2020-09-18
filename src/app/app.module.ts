@@ -9,6 +9,9 @@ import { HeaderComponent } from './main/header/header.component';
 import { FooterComponent } from './main/footer/footer.component';
 import { MainSidebarComponent } from './main/main-sidebar/main-sidebar.component';
 import { ControlSidebarComponent } from './main/control-sidebar/control-sidebar.component';
+import { HomeComponent } from './page/home/home.component';
+import { ContactsComponent } from './page/contacts/contacts.component';
+import { PageNotFoundComponent } from './page/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { ControlSidebarComponent } from './main/control-sidebar/control-sidebar.
     HeaderComponent,
     FooterComponent,
     MainSidebarComponent,
-    ControlSidebarComponent
+    ControlSidebarComponent,
+    HomeComponent,
+    ContactsComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
