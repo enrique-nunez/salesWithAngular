@@ -6,15 +6,16 @@ import { ContactsComponent } from './page/contacts/contacts.component';
 import { HomeComponent } from './page/home/home.component';
 import { PageNotFoundComponent } from './page/page-not-found/page-not-found.component';
 
-const routes: Routes = [{
-  path: '', component : MainComponent,
-  children: [
-    {path: '', component: HomeComponent},
-    {path: 'contacts', component: ContactsComponent},
-    {path: '**', component: PageNotFoundComponent}
-  ]
-},
-  {path: 'login', component : LoginComponent}
+const routes: Routes = [
+  {path: 'login', component : LoginComponent},
+  { path: '', component : MainComponent,
+    children: [
+      {path: '', component: HomeComponent},
+      {path: 'contacts', component: ContactsComponent},
+      {path: '**', component: PageNotFoundComponent}
+    ]
+  },
+
 ];
 
 @NgModule({
