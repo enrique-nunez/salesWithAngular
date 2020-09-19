@@ -12,6 +12,9 @@ import { ControlSidebarComponent } from './main/control-sidebar/control-sidebar.
 import { HomeComponent } from './page/home/home.component';
 import { ContactsComponent } from './page/contacts/contacts.component';
 import { PageNotFoundComponent } from './page/page-not-found/page-not-found.component';
+import { EmployeeListComponent } from './page/employee/employee-list/employee-list.component';
+import { CommonModule } from '@angular/common';
+import { EmployeeAddComponent } from './page/employee/employee-add/employee-add.component';
 
 @NgModule({
   declarations: [
@@ -24,10 +27,13 @@ import { PageNotFoundComponent } from './page/page-not-found/page-not-found.comp
     ControlSidebarComponent,
     HomeComponent,
     ContactsComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    EmployeeListComponent,
+    EmployeeAddComponent
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     AppRoutingModule
   ],
   providers: [],
